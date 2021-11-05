@@ -1,0 +1,46 @@
+.modal {
+  background-color: #fff;
+  border-radius: 8px;;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+  padding: 16px;
+
+  width: 394px;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      color: var(--pri);
+      font-size: 1.2rem;
+      flex-grow: 1;
+      margin-left: 34px;
+    }
+
+  }
+
+  input {
+    background-color: var(--sec);
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+
+  }
+
+  button {
+    background-color: var(--pri);
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    height: 48px;
+  }
+}
+
+.close {
+  background-color: none;
+}

@@ -1,0 +1,16 @@
+.modal-instancia {
+  margin: 32px 0;
+}
+
+.background-modal {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+
+  .divider {
+    margin: 16px 0;
+    background-color: var(--pri);
+    height: 1px;
+    width: 100%;
+  }
+}

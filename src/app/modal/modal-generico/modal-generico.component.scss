@@ -1,0 +1,75 @@
+.modal {
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+  // padding: 16px;
+
+  width: 394px;
+
+  button {
+    border: none;
+
+    &:focus {
+      outline: var(--pri);
+    }
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      color: var(--pri);
+      font-size: 1.2rem;
+      flex-grow: 1;
+      margin-left: 34px;
+    }
+
+    button {
+      background: none;
+    }
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+
+  select {
+    background-color: var(--sec);
+    border: none;
+    border-radius: 8px;
+    height: 48px;
+    padding: 16px;
+
+    &:focus {
+      outline-color: var(--pri);
+    }
+
+    option {
+      border: none;
+      padding: 5px 0;
+
+      &:hover {
+        background-color: var(--pri);
+        color: #fff;
+      }
+    }
+  }
+
+  button {
+    background-color: var(--pri);
+    border-radius: 8px;
+    color: #fff;
+    height: 48px;
+  }
+}

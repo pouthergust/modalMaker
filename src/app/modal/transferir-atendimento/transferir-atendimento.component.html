@@ -1,0 +1,29 @@
+<div class="background-modal">
+  <app-modal-generico class="modal-instancia"
+    [header]="true"
+    (click)="aooba()"
+    subtitle="Para o Agente"
+    colecao="agente"
+    [opcoes]="agentes"
+    btnTxt="Transferir"
+    [metodo]="metodoUm"
+  ></app-modal-generico>
+
+  <div class="divider"></div>
+
+  <app-modal-generico class="modal-instancia"
+    subtitle="Para Grupo de Atendimento"
+    colecao="grupo"
+    [opcoes]="grupos"
+    btnTxt="Transferir"
+    [metodo]="metodoDois"
+  ></app-modal-generico>
+
+  <div class="divider"></div>
+
+  <app-modal-generico class="modal-instancia"
+    subtitle="Para inicio do Atendimento"
+    btnTxt="Transferir"
+    [metodo]="metodoTres"
+  ></app-modal-generico>
+</div>

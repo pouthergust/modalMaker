@@ -1,0 +1,34 @@
+<div class="background-modal">
+  <div class="dialogo">
+    <header>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#BE48FF"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/></svg>
+      <h2>Enviar Arquivo</h2>
+      <button (click)="close()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#BE48FF"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button>
+    </header>
+
+    <form formGroup="fileForm" class="form-inline">
+
+      <input
+        MatInput
+        formControlName="file"
+        name="file"
+        type="file"
+        class="file-input"
+        hidden
+        #fileUpload
+      >
+
+      <div class="input">
+        <button (click)="fileUpload.click()">
+          {{fileName || "Nenhum arquivo selecionado..."}}
+        </button>
+      </div>
+
+      <div class="buttons">
+        <button class="cancelar" (click)="close()" >Cancelar</button>
+      <button class="confirmar" type="submit" (click)="fileUpload.click()" >Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
