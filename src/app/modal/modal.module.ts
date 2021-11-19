@@ -9,6 +9,7 @@ import { TagModalModule } from './tag-modal/tag-modal.module';
 import { IniciarNovoModule } from './iniciar-novo/iniciar-novo.module';
 import { CadastrarClienteModalComponent } from './cadastrar-cliente-modal/cadastrar-cliente-modal.component';
 import { CadastrarClienteModalModule } from './cadastrar-cliente-modal/cadastrar-cliente-modal.module';
+import { QrcodeModule } from './qrcode/qrcode.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CadastrarClienteModalModule } from './cadastrar-cliente-modal/cadastrar
     IniciarNovoModule,
     ModalFileModule,
     TagModalModule,
+    QrcodeModule,
     ButtonModule
   ],
   exports: [
@@ -30,6 +32,7 @@ import { CadastrarClienteModalModule } from './cadastrar-cliente-modal/cadastrar
     IniciarNovoModule,
     ModalFileModule,
     TagModalModule,
+    QrcodeModule,
     ButtonModule
   ]
 })
