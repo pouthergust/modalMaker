@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ConfigSupervisorComponent } from './config-supervisor.component';
+import { ToggleModule } from 'src/app/components/toggle/toggle.module';
 
 
 
@@ -9,7 +10,11 @@ import { ConfigSupervisorComponent } from './config-supervisor.component';
     ConfigSupervisorComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ToggleModule
+  ],
+  exports: [
+    ConfigSupervisorComponent
   ]
 })
 export class ConfigSupervisorModule { }

@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./config-supervisor.component.scss']
 })
 export class ConfigSupervisorComponent implements OnInit {
+  title = 'Configurações Supervisor';
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  close(): void {
+    window.alert('Fechou')
   }
 
 }

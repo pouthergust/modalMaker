@@ -1,0 +1,60 @@
+$toggle-div: 'c-toggle-div';
+$bg: 'toggle-bg';
+$bullet: 'bullet';
+$description: 'status';
+$txt-on: attr(title);
+$txt-off: '';
+
+[class^=#{$toggle-div}] {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+
+  & { margin-top: 5px; }
+}
+
+[class^=#{$bg}] {
+  align-items: center;
+  border-radius: 50px;
+  display: flex;
+  height: 10px;
+  width: 30px;
+
+  & { background-color: #DDB0F7; }
+}
+
+[class^=#{$bullet}] {
+  border-radius: 50px;
+  height: 15px;
+  position: relative;
+  width: 15px;
+
+  & {
+    margin-left: 15px;
+    background-color: #BE48FF;
+  }
+}
+
+input ~ [class^=#{$toggle-div}] .#{$description}::after {
+  color: var(--pri);
+  content: #{$txt-on};
+  margin-left: 5px;
+}
+
+input:checked ~ [class^=#{$toggle-div}] {
+
+  [class^=#{$bg}] {
+    background-color: #AFAFAF;
+  }
+
+  [class^=#{$bullet}] {
+    margin-left: 0;
+    background-color: #f1f1f1;
+  }
+
+  :where(.#{$description})::after {
+    color: #AFAFAF;
+    content: '#{$txt-off}';
+  }
+}

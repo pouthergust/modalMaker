@@ -10,6 +10,7 @@ import { IniciarNovoModule } from './iniciar-novo/iniciar-novo.module';
 import { CadastrarClienteModalComponent } from './cadastrar-cliente-modal/cadastrar-cliente-modal.component';
 import { CadastrarClienteModalModule } from './cadastrar-cliente-modal/cadastrar-cliente-modal.module';
 import { QrcodeModule } from './qrcode/qrcode.module';
+import { ConfigSupervisorModule } from './config-supervisor/config-supervisor.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { QrcodeModule } from './qrcode/qrcode.module';
     CommonModule,
     TransferirAtendimentoModule,
     CadastrarClienteModalModule,
+    ConfigSupervisorModule,
     ModalGenericoModule,
     IniciarNovoModule,
     ModalFileModule,
@@ -28,6 +30,7 @@ import { QrcodeModule } from './qrcode/qrcode.module';
   exports: [
     TransferirAtendimentoModule,
     CadastrarClienteModalModule,
+    ConfigSupervisorModule,
     ModalGenericoModule,
     IniciarNovoModule,
     ModalFileModule,

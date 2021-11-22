@@ -1,0 +1,120 @@
+.modal {
+  background-color: #fff;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+  padding: 16px;
+  margin: 20px;
+
+  overflow-y: auto;
+
+  min-width: 394px;
+
+  > * {
+    transition: all .3s;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .divider {
+    // margin: 16px 0;
+    background-color: #f1f1f1;
+    height: 1px;
+    width: 100%;
+  }
+
+  input {
+    background-color: var(--sec);
+    border: none;
+    border-radius: 8px;
+    padding: 0 16px;
+    height: 48px;
+    width: calc(100% - 32px);
+
+    &:focus {
+      outline-color: var(--pri);
+    }
+  }
+
+  button {
+    border: none;
+
+    &:focus {
+      outline: var(--pri);
+    }
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      color: var(--pri);
+      font-size: 1.2rem;
+      flex-grow: 1;
+      margin-left: 34px;
+    }
+
+    button {
+      background: none;
+    }
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+
+  select {
+    background-color: var(--sec);
+    border: none;
+    border-radius: 8px;
+    height: 48px;
+    padding: 16px;
+
+    &:focus {
+      outline-color: var(--pri);
+    }
+
+    option {
+      border: none;
+      padding: 5px 0;
+
+      &:hover {
+        background-color: var(--pri);
+        color: #fff;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+
+    button {
+      background-color: var(--pri);
+      border-radius: 8px;
+      color: #fff;
+      height: 48px;
+      width: 30%;
+    }
+
+    .cancelar {
+      background-color: rgb(175, 175, 175);
+    }
+  }
+}
