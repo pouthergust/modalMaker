@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastrar-canal.component.scss']
 })
 export class CadastrarCanalComponent implements OnInit {
+  title = 'Cadastrar Canal';
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  close(): void {
+    window.alert('Fechou')
   }
 
 }

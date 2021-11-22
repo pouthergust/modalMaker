@@ -10,6 +10,9 @@ import { CadastrarCanalComponent } from './cadastrar-canal.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    CadastrarCanalComponent
   ]
 })
 export class CadastrarCanalModule { }

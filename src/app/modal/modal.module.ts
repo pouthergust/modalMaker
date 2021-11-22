@@ -11,6 +11,7 @@ import { CadastrarClienteModalComponent } from './cadastrar-cliente-modal/cadast
 import { CadastrarClienteModalModule } from './cadastrar-cliente-modal/cadastrar-cliente-modal.module';
 import { QrcodeModule } from './qrcode/qrcode.module';
 import { ConfigSupervisorModule } from './config-supervisor/config-supervisor.module';
+import { CadastrarCanalModule } from './cadastrar-canal/cadastrar-canal.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ConfigSupervisorModule } from './config-supervisor/config-supervisor.mo
     TransferirAtendimentoModule,
     CadastrarClienteModalModule,
     ConfigSupervisorModule,
+    CadastrarCanalModule,
     ModalGenericoModule,
     IniciarNovoModule,
     ModalFileModule,
@@ -31,6 +33,7 @@ import { ConfigSupervisorModule } from './config-supervisor/config-supervisor.mo
     TransferirAtendimentoModule,
     CadastrarClienteModalModule,
     ConfigSupervisorModule,
+    CadastrarCanalModule,
     ModalGenericoModule,
     IniciarNovoModule,
     ModalFileModule,
