@@ -9,7 +9,27 @@
   padding: 16px;
   margin: 20px;
 
-  width: 394px;
+  overflow-y: auto;
+
+  min-width: 394px;
+
+  > * {
+    transition: all .3s;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .divider {
+    // margin: 16px 0;
+    background-color: #f1f1f1;
+    height: 1px;
+    width: 100%;
+  }
 
   input {
     background-color: var(--sec);
@@ -58,6 +78,12 @@
     margin-bottom: 10px;
   }
 
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
 
   select {
     background-color: var(--sec);
@@ -84,42 +110,18 @@
   .buttons {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 16px;
 
     button {
       background-color: var(--pri);
       border-radius: 8px;
       color: #fff;
       height: 48px;
-      width: 30%;
+      width: 100%;
     }
 
     .cancelar {
       background-color: rgb(175, 175, 175);
     }
   }
-}
-
-// .img {
-//   object-fit: contain;
-//   width: 100%;
-
-//   &:hover {
-//     width: calc(100% * 2);
-//   }
-// }
-
-
-.img {
-  background-color: aqua;
-  background-image: url('https://cdn.dooca.store/816/products/aooba-fem-cropped-bordo.jpg?v=1620918606');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  height: 800px;
-  width: 400px;
-}
-
-.img:hover {
-  width: calc(100% * 2);
 }

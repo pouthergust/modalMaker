@@ -5,14 +5,20 @@
     <button (click)="close()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#BE48FF"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button>
   </header>
   <form class="form">
-    <h2>Usuário</h2>
-    <input type="text" name="nomeUsuario" placeholder="Digite o usuário" required>
+    <h2>Nome do grupo</h2>
+    <input type="text" name="nomeCanal" placeholder="Digite o nome do canal">
 
-    <h2>E-mail</h2>
-    <input type="email" name="email" placeholder="E-mail" pattern="([a-z0-9!#$%-_\.]+)@([a-z0-9!#$%-_\.]+)" required>
+    <h2>Tipo de atendimento</h2>
+    <input type="number" name="numWhatsapp" placeholder="Digite o tipo de atendimento">
 
-    <h2>Senha</h2>
-    <input type="text" name="senha" placeholder="Digite sua senha" required>
+    <h2>Ordem agentes</h2>
+    <input type="number" name="numWhatsapp" placeholder="Digite a ordem do agente">
+
+    <h2>Delay de envios</h2>
+    <input type="time" name="numWhatsapp" placeholder="Insira o tempo">
+
+    <h2>Tempo maximo</h2>
+    <input type="time" name="numWhatsapp" placeholder="Insira o tempo">
 
     <div class="buttons">
       <button class="confirmar">Cadastrar</button>

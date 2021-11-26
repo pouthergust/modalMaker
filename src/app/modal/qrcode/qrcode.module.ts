@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { QrcodeComponent } from './qrcode.component';
+import { NgxImgZoomModule } from 'ngx-img-zoom';
 
 
 
@@ -9,7 +10,8 @@ import { QrcodeComponent } from './qrcode.component';
     QrcodeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgxImgZoomModule
   ],
   exports: [
     QrcodeComponent
