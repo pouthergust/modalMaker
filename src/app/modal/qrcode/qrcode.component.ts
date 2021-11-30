@@ -18,21 +18,52 @@ export class QrcodeComponent implements OnInit {
    }
 
   ngOnInit(): void {
+
+    // console.log(fig.getBoundingClientRect())
   }
 
-  @HostListener('mousemove', ['$event'])
+  aoba() {
+    let fig = document.querySelector('.mArea') as HTMLElement;
+    let img = document.querySelector('.mImg') as HTMLImageElement;
+
+    console.log(fig, img)
+  }
+
+  @HostListener('mouseenter', ['$event'])
   aooba(event: MouseEvent): void {
-    let img = document.querySelector('.img') as HTMLDivElement;
-    // let img = document.querySelector('.img') as HTMLImageElement;
-    img.style.backgroundPosition = `${event.x / -5}px ${event.y / -5}px`;
-    // img.style.objectPosition = `${event.x / -10}% ${event.y / -10}%`;
+    let img = document.querySelector('.mImg') as HTMLImageElement;
+    let fig = document.querySelector('.mArea') as HTMLElement;
+
+    let clientX = event.clientX - fig.offsetLeft
+    let clientY = event.clientY - fig.offsetTop
+
+    console.log(event)
+    this.aoba()
+
+    let mWidth = fig.offsetWidth
+    let mHeight = fig.offsetHeight
+
+    clientX = clientX / mWidth * 100;
+    clientY = clientY / mHeight * 100;
+
+    img.style.transform = `translate(-${clientX}%, -${clientY}%) scale(2)`;
+
+
+    // img.style.transform = `scale(2)`;
+    // img.style.objectPosition = `-${clientX}% -${clientY}%`;
+
+    // img.style.transform = `scale(2)`;
+    // img.style.objectPosition = `${clientX}px, ${clientY}px`;
+    // img.style.backgroundPosition = `${event.x / -10}px ${event.y / 15}%`;
   }
 
   @HostListener('mouseout', ['$event'])
   saida(event: MouseEvent): void {
-    let img = document.querySelector('.img') as HTMLDivElement;
+    let img = document.querySelector('.mImg') as HTMLImageElement;
     // let img = document.querySelector('.img') as HTMLImageElement;
-    img.style.backgroundPosition = `center`;
+    // img.style.backgroundPosition = `center`;
+    img.style.transform = `translate(0%, 0%) scale(1)`;
+    // img.style.transform = `scale(1)`;
     // img.style.objectPosition = `50% 50%`;
   }
 }

@@ -108,6 +108,17 @@
 //   }
 // }
 
+.mArea {
+  overflow: hidden;
+  position: relative;
+
+  .mImg {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+
 
 .img {
   background-color: aqua;
