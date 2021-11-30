@@ -29,9 +29,13 @@ export class QrcodeComponent implements OnInit {
 
     let clientX = event.clientX - fig.offsetLeft
     let clientY = event.clientY - fig.offsetTop
+    // let clientX = event.clientX - fig.getBoundingClientRect().left
+    // let clientY = event.clientY - fig.getBoundingClientRect().top
 
     let mWidth = fig.offsetWidth
     let mHeight = fig.offsetHeight
+    // let mWidth = fig.getBoundingClientRect().width
+    // let mHeight = fig.getBoundingClientRect().height
 
     clientX = clientX / mWidth * 100;
     clientY = clientY / mHeight * 100;
